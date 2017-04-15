@@ -1,0 +1,87 @@
+This is a test file.
+This file will be sent from RPI3 to host PC via WIFI.
+In case of any data loss CRC32 needs tobe implemented.
+
+1) To verify parity byte unsigned short needs to be considered.
+
+Say CRC polynomial is 11010010010110101
+
+Sender:
+data is --> 1010......01110 (1022 bytes) 
+CRC is --> 2 bytes
+
+result = data;
+for(int i = 0;i< 1022*8; ){
+	if(result << i){
+		poly << = (1022*8) - i;
+		result ^ = poly;
+	}
+
+}
+
+
+
+So what i am saying first i will send the text file from rpi to host pc then
+we will check what is the problem.... If any found then we shall implement checksum
+for transmit and finally check the data at receiving end.
+
+1> .......... lets hope for the best.
+
+This is a test file.
+This file will be sent from RPI3 to host PC via WIFI.
+In case of any data loss CRC32 needs tobe implemented.
+
+1) To verify parity byte unsigned short needs to be considered.
+
+Say CRC polynomial is 11010010010110101
+
+Sender:
+data is --> 1010......01110 (1022 bytes) 
+CRC is --> 2 bytes
+
+result = data;
+for(int i = 0;i< 1022*8; ){
+	if(result << i){
+		poly << = (1022*8) - i;
+		result ^ = poly;
+	}
+
+}
+
+
+
+So what i am saying first i will send the text file from rpi to host pc then
+we will check what is the problem.... If any found then we shall implement checksum
+for transmit and finally check the data at receiving end.
+
+2> .......... lets hope for the best.
+
+This is a test file.
+This file will be sent from RPI3 to host PC via WIFI.
+In case of any data loss CRC32 needs tobe implemented.
+
+1) To verify parity byte unsigned short needs to be considered.
+
+Say CRC polynomial is 11010010010110101
+
+Sender:
+data is --> 1010......01110 (1022 bytes) 
+CRC is --> 2 bytes
+
+result = data;
+for(int i = 0;i< 1022*8; ){
+	if(result << i){
+		poly << = (1022*8) - i;
+		result ^ = poly;
+	}
+
+}
+
+
+
+So what i am saying first i will send the text file from rpi to host pc then
+we will check what is the problem.... If any found then we shall implement checksum
+for transmit and finally check the data at receiving end.
+
+lets hope for the best.
+3> .......... lets hope for the best.
